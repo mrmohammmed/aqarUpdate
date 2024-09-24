@@ -57,7 +57,6 @@ h4,
 h5,
 h6 {
   font-family: ping-bold;
-  color: #fff;
 }
 
 a {
@@ -4017,8 +4016,27 @@ a:hover {
   width: 162px;
   height: 51px;
   display: table;
-}
 
+}
+.navbar .actions .download a span .photo{
+  position: relative;
+  width: 41px;
+height: 41px;
+background-color: #fff;
+border-radius: 50%;
+
+}
+.navbar .actions .download a span  .word{
+ 
+}
+.navbar .actions .download a span .photo img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 33px;
+  height: 33px;
+}
 .suggestion .error {
   display: none;
   color: red;
