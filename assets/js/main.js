@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
       },
-      slidesPerView: 3, // Show one slide at a time
-      spaceBetween: 10, // Space between slides
+      slidesPerView: 3, // Show 3 slides at a time
+      spaceBetween: 20, // Space between slides
   });
 });
