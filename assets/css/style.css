@@ -515,8 +515,9 @@ input[type="email"] {
   transition: all 0.1s ease-in-out;
 }
 .estateCities .place:hover {
-  background: rgba(255, 136, 27, 0.08);
+  background: rgba(255, 136, 27, 0.05); 
   border: 1px solid rgba(255, 136, 27, 0.08);
+  
 }
 .estateCities .place:hover a {
   color: var(--secondary-color) !important;
@@ -551,9 +552,23 @@ input[type="email"] {
   bottom: 0;
   max-width: 100%;
   max-height: 100%;
+  z-index: 999999999999999;
 }
-.estateCities .place:hover .photo img {
-  filter: sepia(100%) hue-rotate(10deg) saturate(500%) brightness(1.1);
+.estateCities .place:hover .photo .primary {
+
+opacity: 0;
+  
+}
+.estateCities .place:hover .photo .secondary {
+
+  opacity: 1;
+    
+  }
+.estateCities .place .photo .primary{
+  opacity: 1;
+}
+.estateCities .place .photo .secondary{
+  opacity: 0;
 }
 /* banners */
 .banners .banner {
@@ -598,4 +613,19 @@ input[type="email"] {
   height: 50px;
   text-align: center;
   line-height: 50px;
+}
+/* feature-offices */
+.feature-offices{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  overflow: hidden;
+}
+.swiper-container {
+
+}
+
+/* Style individual slides */
+.swiper-slide {
+  border-radius: 19px;
+border: 1px solid #D9D9D9;
 }
