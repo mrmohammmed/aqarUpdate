@@ -686,3 +686,30 @@ input[type="email"] {
 .swiper-rtl .swiper-button-prev {
   right: -12px;
 }
+/* estate-financing */
+.estate-financing .financing{
+  border-radius: 34px;
+  background: rgba(255, 136, 27, 0.16);
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.estate-financing .financing .info{
+  padding: 40px;
+  width: 100%;
+}
+.estate-financing .financing .info h2{
+font-size: 24px;
+padding-bottom: 15px;
+}
+.estate-financing .financing .info p{
+  font-size: 16px;
+}
+.estate-financing .financing .info a{
+  
+}
+.estate-financing .financing .photo{
+  width: 100%;
+background-image: url('../images//Intersect.png');
+background-repeat: no-repeat;
+}
