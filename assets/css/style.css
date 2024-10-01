@@ -687,29 +687,119 @@ input[type="email"] {
   right: -12px;
 }
 /* estate-financing */
-.estate-financing .financing{
+.estate-financing {
+  padding-top: 100px;
+}
+.estate-financing .financing {
   border-radius: 34px;
   background: rgba(255, 136, 27, 0.16);
   display: flex;
   flex-wrap: nowrap;
 }
 
-.estate-financing .financing .info{
-  padding: 40px;
-  width: 100%;
+.estate-financing .financing .info {
+  padding: 40px 40px;
+  width: 45%;
 }
-.estate-financing .financing .info h2{
-font-size: 24px;
-padding-bottom: 15px;
+.estate-financing .financing .info h2 {
+  font-size: 24px;
+  padding-bottom: 20px;
 }
-.estate-financing .financing .info p{
+.estate-financing .financing .info p {
   font-size: 16px;
+  padding-bottom: 35px;
 }
-.estate-financing .financing .info a{
-  
+.estate-financing .financing .info a {
+  border-radius: 27px;
+  background: #262f6a;
+  width: 177px;
+  height: 50px;
+  display: table;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
 }
-.estate-financing .financing .photo{
+.estate-financing .financing .photo {
+  width: 55%;
+  background-image: url("../images//Intersect.png");
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+
+  background-position: center;
+}
+.estate-financing .financing .photo img {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  max-width: 100%;
+  height: 140%;
+}
+/* section of bloogs */
+.bloogs {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.bloogs .blog {
+  border-radius: 26px;
+  border: 1px solid #858585;
+  padding: 15px;
+}
+.bloogs .blog img {
   width: 100%;
-background-image: url('../images//Intersect.png');
-background-repeat: no-repeat;
+  border-radius: 26px;
+  height: 316px;
+}
+.bloogs .blog h2 {
+  font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.bloogs .blog h2 a {
+  color: var(--primary-color);
+}
+.bloogs .blog p {
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+.bloogs .blog .info {
+  justify-content: space-between;
+}
+.bloogs .blog .info .date p {
+  color: #858585;
+  font-size: 18px;
+  padding-bottom: 0px;
+}
+.bloogs .blog .info .more a {
+  color: var(--secondary-color);
+  font-size: 18px;
+  text-decoration: underline;
+}
+/* section of download */
+.downloadApp {
+  padding-top: 70px;
+
+  background: rgba(255, 136, 27, 0.05);
+}
+.downloadApp .info {
+  width: 65%;
+}
+.downloadApp .info p {
+  font-size: 18px;
+  max-width: 80%;
+  padding-bottom: 30px;
+}
+.downloadApp .info ul li {
+  margin-bottom: 30px;
+}
+.downloadApp .photo {
+  width: 35%;
+}
+.downloadApp .photo img {
+  width: 90%;
+}
+.downloadApp .info .second {
+  margin-right: 20px;
 }
