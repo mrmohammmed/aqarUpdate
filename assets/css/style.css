@@ -369,36 +369,33 @@ input[type="email"] {
 }
 
 .navbar .actions .download .download-app {
-  box-shadow: 0px 3px 6px #00000029;
-  border-radius: 11px;
-  min-width: 153px;
-  width: auto;
-  height: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.navbar .actions .download img {
-  width: 100%;
-  height: auto;
-  border-radius: 0px;
+  box-shadow: 0px 4px 8px 0px rgba(38, 47, 106, 0.29);
+  border-radius: 5px;
+  width: 163px;
+  height: 265px;
+  padding: 10px;
+  background-color: #fff;
+  margin-top: 5px;
 }
 
 .navbar .actions .download .download-app li {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+}
+.navbar .actions .download .download-app li ul li:first-of-type img {
+  width: auto;
+  height: auto;
+}
+.navbar .actions .download .download-app li ul li:nth-of-type(2) img,
+.navbar .actions .download .download-app li ul li:last-of-type img {
+  width: 143px;
+  height: 42px;
 }
 
-.navbar .actions .download .download-app a {
-  background-color: transparent;
-  border: 0px;
-  padding: 0px;
-}
 .navbar .actions .download .download-app li:last-of-type {
   margin-bottom: 0px;
 }
 
 .navbar .actions .download a:hover {
-  color: #fff !important;
 }
 .btn-close {
   display: none;
@@ -415,6 +412,149 @@ input[type="email"] {
   .navbar-brand {
     width: 50% !important;
   }
+}
+/* side-menu */
+.bodySidebar {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden; /* Enable scrolling */
+  z-index: 999999;
+  visibility: hidden; /* Initially hidden */
+  opacity: 0; /* Hidden with opacity */
+  transition: visibility 0s, opacity 0.3s ease;
+}
+.bodySidebar.show {
+  visibility: visible; /* Show the sidebar */
+  opacity: 1; /* Fade in the overlay */
+}
+.bodySidebar .side-menu {
+  top: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+  background-color: #a7a7a7;
+  height: 100%;
+  left: 0;
+  width: 450px;
+  position: absolute;
+  overflow-y: auto; /* Enable vertical scrolling in the menu */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+.bodySidebar .side-menu .top-sideMenu {
+  padding: 20px;
+  background-color: #fff;
+}
+.bodySidebar .side-menu .top-sideMenu .close-services {
+  width: 36px;
+  height: 36px;
+  background-color: #a2a2a2;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 25px;
+  padding-top: 5px;
+  border: 0px;
+}
+.bodySidebar .side-menu .top-sideMenu h2 {
+  font-size: 16px;
+  padding: 10px 0px;
+}
+.bodySidebar .side-menu .top-sideMenu p {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+.bodySidebar .side-menu .top-sideMenu ul li:first-of-type a {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 16px;
+  border-radius: 23px;
+  border: 1px solid var(--primary-color);
+  padding: 8px 35px;
+  text-align: center;
+}
+.bodySidebar .side-menu .top-sideMenu ul li:last-of-type a {
+  background-color: #fff;
+  color: var(--primary-color);
+  font-size: 16px;
+  border-radius: 23px;
+  border: 1px solid var(--primary-color);
+  padding: 8px 35px;
+  text-align: center;
+}
+.bodySidebar .side-menu .top-sideMenu ul li:last-of-type {
+  margin-right: 20px;
+}
+.bodySidebar .side-menu .services-menu {
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+.bodySidebar .side-menu .services-menu .title {
+  font-size: 16px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+}
+.bodySidebar .side-menu .services-menu .service {
+  box-shadow: 0px 4px 4.5px 0px rgba(0, 0, 0, 0.09);
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: block;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+  background-color: #fff;
+}
+
+.bodySidebar .side-menu .services-menu .service:hover {
+  border: 1px solid var(--primary-color);
+}
+
+.bodySidebar .side-menu .services-menu .service .parent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bodySidebar .side-menu .services-menu .service .parent .right {
+  display: flex;
+}
+
+.bodySidebar .side-menu .services-menu .service .parent .right .content {
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.bodySidebar .side-menu .services-menu .service .parent .right .content h2 {
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+.bodySidebar .side-menu .services-menu .service .parent .right .content p {
+  color: #858585;
+  font-size: 15px;
+}
+
+.bodySidebar .side-menu .services-menu .service .parent .left .icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 15px;
+  position: relative;
+}
+
+.bodySidebar .side-menu .services-menu .service .parent .left .icon .svg-inline--fa {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
 }
 /*  hero-section */
 .hero-section {
@@ -551,7 +691,6 @@ input[type="email"] {
   bottom: 0;
   max-width: 100%;
   max-height: 100%;
-  z-index: 999999999999999;
 }
 .estateCities .place:hover .photo .primary {
   opacity: 0;
@@ -802,4 +941,65 @@ input[type="email"] {
 }
 .downloadApp .info .second {
   margin-right: 20px;
+}
+/* footer */
+.top-footer {
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+.top-footer .info {
+  max-width: 70%;
+}
+.top-footer .follow {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.top-footer p {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.top-footer .follow ul {
+  justify-content: center;
+}
+.top-footer .follow ul li a {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  line-height: 45px;
+  text-align: center;
+  border: 1px solid #000;
+  display: table;
+  margin-left: 15px;
+}
+.top-footer .info .barcode {
+  position: relative;
+}
+.top-footer .info .second {
+  position: absolute;
+  top: 30%;
+  left: 24.5%;
+}
+.top-footer .links-pages h2 {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.top-footer .links-pages ul li {
+  padding-bottom: 10px;
+}
+.top-footer .links-pages ul li a {
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+.top-footer .links-pages ul li a:hover {
+  color: var(--secondary-color);
+}
+.top-footer {
+  border-bottom: 1px solid #a7a7a7;
+}
+.bottom-footer {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.bottom-footer p {
+  font-size: 16px;
 }
