@@ -446,23 +446,24 @@ input[type="email"] {
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 .bodySidebar .side-menu .top-sideMenu {
-  padding: 20px;
+  padding: 30px 20px;
   background-color: #fff;
 }
 .bodySidebar .side-menu .top-sideMenu .close-services {
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   background-color: #a2a2a2;
   color: #fff;
   text-align: center;
   border-radius: 50%;
-  font-size: 25px;
-  padding-top: 5px;
+  font-size: 20px;
+  padding-top: 4px;
   border: 0px;
 }
 .bodySidebar .side-menu .top-sideMenu h2 {
   font-size: 16px;
   padding: 10px 0px;
+  padding-top: 15px;
 }
 .bodySidebar .side-menu .top-sideMenu p {
   font-size: 14px;
@@ -556,7 +557,50 @@ input[type="email"] {
   transform: translate(-50%, -50%);
   font-size: 20px;
 }
+.bodySidebar .side-menu .help-menu {
+  background-color: #fff;
+  margin-top: 10px;
+}
+.bodySidebar .side-menu .help-menu h2 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.bodySidebar .side-menu .help-menu p {
+  font-size: 15px;
+  color: #858585;
+}
+.bodySidebar .side-menu .help-menu .titles {
+  border-bottom: 1px solid rgba(113, 113, 113, 0.66);
+  padding: 15px 0;
+}
+.bodySidebar .side-menu .help-menu .numbers-phone {
+  padding: 10px 0;
+}
+.bodySidebar .side-menu .help-menu .numbers-phone p {
+}
+.bodySidebar .side-menu .help-menu .numbers-phone a {
+  font-size: 18px;
+  font-weight: 800;
+  padding-right: 5px;
+}
+.bodySidebar .side-menu .help-menu .phone .svg-inline--fa {
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-size: 18px;
+}
+.bodySidebar .side-menu .help-menu .whatsapp .svg-inline--fa {
+  background-color: #128c7e;
+  color: #fff;
+  font-size: 22px;
+}
+.bodySidebar .side-menu .help-menu .numbers-phone .svg-inline--fa {
+  border-radius: 50%;
+  text-align: center;
+  padding: 8px;
 
+  position: relative;
+  top: 8px;
+}
 /*  hero-section */
 .hero-section {
   background-image: url("../images/Rectangle\ 21.png");
@@ -783,6 +827,11 @@ input[type="email"] {
   color: var(--primary-color);
   font-size: 18px;
   padding-bottom: 10px;
+}
+.feature-offices .swiper-slide .parent .info h2 a {
+  color: var(--primary-color);
+  float: none;
+  text-decoration: none;
 }
 .feature-offices .swiper-slide .parent .info p {
   font-size: 15px;
