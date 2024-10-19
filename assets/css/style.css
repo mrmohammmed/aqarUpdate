@@ -179,9 +179,9 @@ input[type="email"] {
 }
 
 .modal-content {
-  border-radius: 18px;
+  border-radius: 44px;
   border: 0px;
-  width: 462px;
+  width: 560px;
   margin: auto;
 }
 
@@ -613,7 +613,7 @@ input[type="email"] {
 .hero-section .overlay {
   width: 100%;
   height: 100%;
-  background: rgba(38, 47, 106, 0.67);
+  background: rgba(38, 47, 106, 0.63);
   position: absolute;
   top: 0;
   left: 0;
@@ -1052,4 +1052,278 @@ input[type="email"] {
 }
 .bottom-footer p {
   font-size: 16px;
+}
+/* section of register */
+.register .parent .fill-data {
+  width: 100%;
+}
+
+.register .parent .image {
+  width: 100%;
+  position: relative;
+}
+
+.register .parent .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.register .parent .image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(38, 47, 106, 0.65);
+}
+
+.register .parent .fill-data .enroll {
+  margin: 50px 60px 40px 40px;
+  background-color: #fafafa;
+  border-radius: 51px;
+  padding: 40px;
+}
+
+.register .parent .fill-data .enroll .nav-pills {
+  background-color: #fff;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 17px;
+  flex-wrap: nowrap;
+  margin-bottom: 35px;
+}
+
+.register .parent .fill-data .enroll .nav-pills .nav-item {
+  width: 100%;
+}
+
+.register .parent .fill-data .nav-pills .nav-link.active {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.register .parent .fill-data .nav-pills .nav-link {
+  background-color: transparent;
+  border-radius: 17px;
+  padding: 0.5rem 2rem;
+  color: var(--primary-color);
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.register .first {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.login-form .svg-inline--fa,
+.register .first .svg-inline--fa {
+  position: absolute;
+  bottom: 2rem;
+  right: 15px;
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+#phone-form .svg-inline--fa,
+#company-form .fa-phone-volume,
+#marketer-form .fa-phone-volume,
+#customer-form .fa-phone-volume {
+  position: absolute;
+  bottom: 2rem;
+  right: 15px;
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+.login-form .invalid-feedback,
+.phone-form .invalid-feedback,
+#company-form .invalid-feedback,
+#marketer-form .invalid-feedback,
+#customer-form .invalid-feedback {
+  display: block !important;
+  height: 1rem;
+}
+
+.register .parent .fill-data .first .mice {
+  position: absolute;
+  bottom: 27px;
+  right: 15px;
+}
+
+.register .first .fa-eye-slash {
+  right: auto;
+  left: 30px;
+  cursor: pointer;
+}
+
+.register input {
+  height: 60px;
+  border-radius: 10px;
+  border: 1px solid #a7a7a7;
+  padding-right: 20px;
+  direction: rtl;
+}
+
+.register input::placeholder {
+  color: #000;
+  font-size: 16px;
+}
+
+.showEl {
+  display: table;
+}
+
+.register label {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.register .parent .fill-data input[type="checkbox"] {
+  border-radius: 3px;
+  height: 22px;
+  width: 25px;
+  padding-right: 0px;
+  outline: none;
+  box-shadow: none;
+}
+
+.register .parent .fill-data .form-check-input:checked {
+  background-color: var(--primary-color);
+}
+
+.register .parent .fill-data .form-check label {
+  font-size: 16px;
+  padding-right: 10px;
+  padding-top: 3px;
+}
+
+.register .parent .fill-data .form-check a {
+  color: var(--primary-color);
+}
+
+.register .parent .fill-data input[type="submit"],
+.register .parent .fill-data button[type="button"] {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.register .parent .fill-data input[type="submit"]:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.register .parent .fill-data .haveAccount {
+  text-align: center;
+  font-size: 18px;
+}
+
+.register .parent .fill-data .haveAccount a {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary-color);
+  padding-right: 10px;
+}
+
+.register .first .country {
+  position: absolute;
+  left: 10px;
+  color: #000;
+  font-size: 19px;
+  bottom: 7px;
+}
+
+#phone-form .first .country,
+#company-form .first .country,
+#marketer-form .first .country,
+#customer-form .first .country {
+  position: absolute;
+  left: 30px;
+  color: #000;
+  font-size: 19px;
+  bottom: 1rem;
+}
+
+.register .first .country img {
+  padding-right: 5px;
+}
+
+.register .parent .fill-data .title {
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+}
+
+.register .parent .fill-data .sub-title {
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+  padding-bottom: 40px;
+}
+.register .parent .fill-data .national-login {
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  text-align: center;
+  padding: 10px 0px;
+}
+.register .parent .fill-data .national-login span {
+  font-size: 16px;
+}
+.register .parent .fill-data .or {
+  position: relative;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.register .parent .fill-data .or::after {
+  content: "";
+  background-color: #858585;
+  width: 45%;
+  display: inline-block;
+  height: 1px;
+  right: 0px;
+  position: absolute;
+  top: 55%;
+}
+.register .parent .fill-data .or::before {
+  content: "";
+  background-color: #858585;
+  width: 45%;
+  display: inline-block;
+  height: 1px;
+  left: 0px;
+  position: absolute;
+  top: 55%;
+}
+.register .parent .fill-data .or h2 {
+  font-size: 16px;
+}
+.register .parent .fill-data .forget {
+  margin-top: 3px;
+}
+
+.register .parent .fill-data .forget a {
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.register .number-verification {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.register .number-verification input {
+  border-radius: 3px 3px 0px 0px;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(38, 47, 106, 0.05);
+  text-align: center;
+  padding-right: 0;
 }
