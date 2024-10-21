@@ -288,19 +288,18 @@
                     <div class="or">
                         <h2>أو</h2>
                     </div>
-                    <form method="post" action="">
+                    <form id="loginForm" method="post" action="">
                         <div class="first">
                             <label for="phone">رقم الجوال</label>
-                            <input type="tel" placeholder="ادخل رقم جوالك هنا" id="phone" name="phone"
-                                class="form-control" />
-
+                            <input type="tel" placeholder="ادخل رقم جوالك هنا" id="phone" name="phone" />
                             <p class="country">
                                 <img src="assets/images/Group 45109 (1).svg" />
                             </p>
+                            <p id="phoneError" class="error-message"></p> <!-- مكان رسالة الخطأ -->
                         </div>
 
                         <div class="first">
-                            <input type="submit" value="تسجيل الدخول" class="form-control" />
+                            <input type="submit" value="تسجيل الدخول" />
                         </div>
                     </form>
                     <p class="haveAccount">
@@ -321,18 +320,23 @@
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="nationalLoginModalLabel">تسجيل الدخول</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="nationalLoginForm">
-                        <div class="mb-3">
-                            <label for="identityNumber" class="form-label">رقم الهوية</label>
-                            <input type="text" class="form-control" id="identityNumber" placeholder="أدخل رقم الهوية">
-                        </div>
-                        <button type="submit" class="btn btn-primary">تأكيد</button>
-                    </form>
+                <div class="national-modal text-center">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                                class="fa-solid fa-xmark"></i></button>
+                        <h5 class="modal-title" id="nationalLoginModalLabel">تسجيل الدخول بواسطة النفاذ الوطني</h5>
+                        <p>عشان تدخل لحسابك، استخدم بيانات النفاذ الوطني</p>
+                    </div>
+                    <div class="modal-body">
+                        <form id="nationalLoginForm">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="identityNumber"
+                                    placeholder="أدخل رقم الهوية الوطنية">
+                                <p id="identityError" class="error-message"></p> <!-- مكان رسالة الخطأ -->
+                            </div>
+                            <input type="submit" value="تأكيد">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

@@ -153,6 +153,19 @@ input[type="email"] {
 .select2-hidden-accessible {
   display: none;
 }
+/* input form */
+input {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #a7a7a7;
+  padding-right: 20px;
+  direction: rtl !important;
+  width: 100%;
+}
+input::placeholder {
+  color: #a7a7a7;
+  font-size: 14px;
+}
 /* modal */
 .modal-body {
   text-align: center;
@@ -183,6 +196,7 @@ input[type="email"] {
   border: 0px;
   width: 560px;
   margin: auto;
+  padding: 20px 30px 50px 30px;
 }
 
 .modal-dialog {
@@ -191,23 +205,20 @@ input[type="email"] {
 .modal {
   z-index: 9999999;
 }
+.modal-title {
+  font-size: 18px;
+  padding-bottom: 5px;
+  padding-top: 35px;
+}
 /* error-invalid */
 
 .form-control.is-invalid {
   background-image: none;
 }
-.error {
+.error-message {
   color: red;
   font-size: 14px;
   margin-top: 5px;
-}
-
-.invalid {
-  border: 1px solid red;
-}
-
-.error-message {
-  color: red;
 }
 .heading {
   justify-content: space-between;
@@ -1160,19 +1171,6 @@ input[type="email"] {
   cursor: pointer;
 }
 
-.register input {
-  height: 60px;
-  border-radius: 10px;
-  border: 1px solid #a7a7a7;
-  padding-right: 20px;
-  direction: rtl;
-}
-
-.register input::placeholder {
-  color: #000;
-  font-size: 16px;
-}
-
 .showEl {
   display: table;
 }
@@ -1237,7 +1235,7 @@ input[type="email"] {
   left: 10px;
   color: #000;
   font-size: 19px;
-  bottom: 7px;
+  bottom: 3px;
 }
 
 #phone-form .first .country,
@@ -1326,4 +1324,28 @@ input[type="email"] {
   background-color: rgba(38, 47, 106, 0.05);
   text-align: center;
   padding-right: 0;
+}
+/* modal of national-modal */
+.national-modal p {
+  color: #858585;
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+.national-modal input[type="submit"] {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  color: #fff;
+  margin-top: 30px;
+}
+.national-modal .btn-close {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #a7a7a7;
+  border-radius: 50%;
+  padding: 0px;
+  color: #fff;
+  background-image: none;
+  line-height: 0px;
+  font-size: 20px;
 }
