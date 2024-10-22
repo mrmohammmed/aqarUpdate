@@ -31,7 +31,6 @@ document.querySelector(".bodySidebar").addEventListener("click", function (e) {
   }
 });
 
-// Validation for phone number
 document
   .getElementById("loginForm")
   .addEventListener("submit", function (event) {
@@ -45,6 +44,38 @@ document
     if (!phoneRegex.test(phone)) {
       event.preventDefault(); // Prevent form submission
       phoneError.textContent = "رقم الجوال يجب أن يكون 10 أرقام ويبدأ بـ 05.";
+    } else {
+      event.preventDefault(); // Prevent the default form submission for now
+
+      // Show the modal
+      const modal = document.getElementById("verificationModal");
+      modal.style.display = "block";
+
+      // Handle verification code input
+      document
+        .getElementById("confirmVerification")
+        .addEventListener("click", function () {
+          const inputs = document.querySelectorAll(".verification-code");
+          let code = "";
+
+          inputs.forEach((input) => {
+            code += input.value;
+          });
+
+          const verificationError =
+            document.getElementById("verificationError");
+
+          if (code.length !== 6) {
+            verificationError.textContent =
+              "يجب أن يكون رمز التحقق مكون من 6 أرقام.";
+          } else {
+            verificationError.textContent = "";
+            alert("تم تأكيد الرقم بنجاح!"); // Replace this with actual verification logic
+            modal.style.display = "none"; // Hide the modal
+            // You can now submit the form or proceed with your logic
+            document.getElementById("loginForm").submit();
+          }
+        });
     }
   });
 

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
-    <title>login</title>
+    <title>register</title>
 </head>
 
 <body>
@@ -273,21 +273,10 @@
                         <img src="assets/images/five_x2C__gesture_x2C__hand_x2C__wave 1.svg">
                     </h2>
                     <p class="sub-title">
-                        يمكنك الأن تسجيل الدخول لحسابك
+                        يمكنك الأن تسجيل حساب جديد برقم الجوال
                     </p>
-                    <div class="national-login">
-                        <p>
-                            <img src="assets/images/IAM 1.png">
-                            <span>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#nationalLoginModal">
-                                    تسجيل الدخول عن طريق بوابة النفاذ الوطني الموحد
-                                </a>
-                            </span>
-                        </p>
-                    </div>
-                    <div class="or">
-                        <h2>أو</h2>
-                    </div>
+
+
                     <form id="loginForm" method="post" action="">
                         <div class="first">
                             <label for="phone">رقم الجوال</label>
@@ -297,14 +286,20 @@
                             </p>
                             <p id="phoneError" class="error-message"></p> <!-- مكان رسالة الخطأ -->
                         </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            <label class="form-check-label" for="flexCheckDefault">
+                                <a href="#">أوافق علي الشروط والأحكام الخاصة بعقارتكم</a>
+                            </label>
+                        </div>
 
                         <div class="first">
-                            <input type="submit" value="تسجيل الدخول" />
+                            <input type="submit" value="انشاء الحساب" />
                         </div>
                     </form>
                     <p class="haveAccount">
-                        ليس لديك حساب ؟
-                        <a href="register.html">سجل الأن</a>
+                        لديك حساب ؟
+                        <a href="login.html">سجل دخول الأن</a>
                     </p>
                 </div>
             </div>
@@ -315,28 +310,43 @@
         </div>
     </section>
 
-    <!-- Modal -->
-    <div class="modal fade" id="nationalLoginModal" tabindex="-1" aria-labelledby="nationalLoginModalLabel"
-        aria-hidden="true">
+    <!-- Modal verification phone -->
+    <div id="verificationModal" class="modal" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="national-modal text-center">
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
                                 class="fa-solid fa-xmark"></i></button>
-                        <h5 class="modal-title" id="nationalLoginModalLabel">تسجيل الدخول بواسطة النفاذ الوطني</h5>
-                        <p class="sub-title">عشان تدخل لحسابك، استخدم بيانات النفاذ الوطني</p>
+                        <h5 class="modal-title">تأكيد رقم الجوال</h5>
+                        <p class="sub-title">أدخل رمز التحقق المرسل إلي جوالك</p>
                     </div>
                     <div class="modal-body">
-                        <form id="nationalLoginForm">
+                        <p class="phoneNumber">+9665213456789
+                            <img src="assets/images/pen-circle 1.svg">
+                        </p>
+                        <div class="verification-inputs">
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="identityNumber"
-                                    placeholder="أدخل رقم الهوية الوطنية">
-                                <p id="identityError" class="error-message"></p> <!-- مكان رسالة الخطأ -->
+
+                                <input type="text" maxlength="1" class="verification-code" />
+                                <input type="text" maxlength="1" class="verification-code" />
+                                <input type="text" maxlength="1" class="verification-code" />
+                                &nbsp;
+                                _
+                                &nbsp;
+                                <input type="text" maxlength="1" class="verification-code" />
+                                <input type="text" maxlength="1" class="verification-code" />
+                                <input type="text" maxlength="1" class="verification-code" />
                             </div>
-                            <input type="submit" value="تأكيد">
-                        </form>
+                        </div>
+                        <input type="submit" value="تأكيد">
+
                     </div>
+                    <div class="modal-footer">
+                        <p class="resend">إعادة إرسال بعد 30 ثانية</p>
+                        <a href="#">إعادة إرسال الرمز</a>
+                    </div>
+
                 </div>
             </div>
         </div>
