@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
-    <title>register</title>
+    <title>accountType</title>
 </head>
 
 <body>
@@ -262,96 +262,117 @@
         </div>
     </header>
     <!-- end of top-header -->
+    <section class="typeAccount">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column for Radio Buttons (Tabs) -->
+                <div class="col-md-3">
+                    <div class="right">
+                        <h2>حدد نوع حسابك</h2>
+                        <p>حدد نوع حسابك لإستكمال البيانات</p>
+                        <ul class="nav flex-column nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="type1-tab" data-bs-toggle="tab" href="#type1" role="tab"
+                                    aria-controls="type1" aria-selected="false">
+                                    باحث عن عقار
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="type2-tab" data-bs-toggle="tab" href="#type2" role="tab"
+                                    aria-controls="type2" aria-selected="false">
+                                    مالك أو متعدد الملاك
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="type3-tab" data-bs-toggle="tab" href="#type3" role="tab"
+                                    aria-controls="type3" aria-selected="false">
 
+                                    مسوق
+                                    عقاري
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="type4-tab" data-bs-toggle="tab" href="#type4" role="tab"
+                                    aria-controls="type4" aria-selected="false">
 
-    <section class="register">
-        <div class="parent d-flex">
-            <div class="fill-data">
-                <div class="enroll">
-                    <h2 class="title">
-                        أهلا بك في منصات عقاراتكم
-                        <img src="assets/images/five_x2C__gesture_x2C__hand_x2C__wave 1.svg">
-                    </h2>
-                    <p class="sub-title">
-                        يمكنك الأن تسجيل حساب جديد برقم الجوال
-                    </p>
+                                    مكتب
+                                    عقاري
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="type5-tab" data-bs-toggle="tab" href="#type5" role="tab"
+                                    aria-controls="type5" aria-selected="false">
 
-
-                    <form id="loginForm" method="post" action="">
-                        <div class="first">
-                            <label for="phone">رقم الجوال</label>
-                            <input type="tel" placeholder="ادخل رقم جوالك هنا" id="phone" name="phone" />
-                            <p class="country">
-                                <img src="assets/images/Group 45109 (1).svg" />
-                            </p>
-                            <p id="phoneError" class="error-message"></p> <!-- مكان رسالة الخطأ -->
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required />
-                            <label class="form-check-label" for="flexCheckDefault">
-                                <a href="#">أوافق علي الشروط والأحكام الخاصة بعقارتكم</a>
-                            </label>
-                        </div>
-
-                        <div class="first">
-                            <input type="submit" value="انشاء الحساب" />
-                        </div>
-                    </form>
-                    <p class="haveAccount">
-                        لديك حساب ؟
-                        <a href="login.html">سجل دخول الأن</a>
-                    </p>
+                                    شركة
+                                    عقارية
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="image">
-                <img src="assets/images/Rectangle 1133.png" />
-                <div class="overlay"></div>
+
+                <!-- Right Column for Tab Content -->
+                <div class="col-md-9">
+                    <div class="tab-content" id="myTabContent">
+
+                        <div class="tab-pane fade" id="type1" role="tabpanel" aria-labelledby="type1-tab">
+                            <form>
+                                <p>أنت باحث عن عقار. يمكنك الآن استكمال بياناتك.</p>
+                                <div class="mb-3">
+                                    <label for="name1" class="form-label">الاسم</label>
+                                    <input type="text" class="form-control" id="name1" placeholder="أدخل اسمك">
+                                </div>
+                                <!-- Add other form fields here -->
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="type2" role="tabpanel" aria-labelledby="type2-tab">
+                            <form>
+                                <p>أنت مالك أو متعدد الملاك. قم بتعبئة البيانات الخاصة بك.</p>
+                                <div class="mb-3">
+                                    <label for="name2" class="form-label">الاسم</label>
+                                    <input type="text" class="form-control" id="name2" placeholder="أدخل اسمك">
+                                </div>
+                                <!-- Add other form fields here -->
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="type3" role="tabpanel" aria-labelledby="type3-tab">
+                            <form>
+                                <p>أنت مسوق عقاري. يرجى إدخال تفاصيل التسويق.</p>
+                                <div class="mb-3">
+                                    <label for="name3" class="form-label">الاسم</label>
+                                    <input type="text" class="form-control" id="name3" placeholder="أدخل اسمك">
+                                </div>
+                                <!-- Add other form fields here -->
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="type4" role="tabpanel" aria-labelledby="type4-tab">
+                            <form>
+                                <p>أنت مكتب عقاري. أكمل بيانات المكتب الخاص بك.</p>
+                                <div class="mb-3">
+                                    <label for="name4" class="form-label">اسم المكتب</label>
+                                    <input type="text" class="form-control" id="name4" placeholder="أدخل اسم المكتب">
+                                </div>
+                                <!-- Add other form fields here -->
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="type5" role="tabpanel" aria-labelledby="type5-tab">
+                            <form>
+                                <p>أنت شركة عقارية. يرجى استكمال بيانات الشركة.</p>
+                                <div class="mb-3">
+                                    <label for="name5" class="form-label">اسم الشركة</label>
+                                    <input type="text" class="form-control" id="name5" placeholder="أدخل اسم الشركة">
+                                </div>
+                                <!-- Add other form fields here -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Modal verification phone -->
-    <div id="verificationModal" class="modal fade" tabindex="-1" aria-labelledby="verificationModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="national-modal text-center">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                        <h5 class="modal-title" id="verificationModalLabel">تأكيد رقم الجوال</h5>
-                        <p class="sub-title">أدخل رمز التحقق المرسل إلي جوالك</p>
-                    </div>
-                    <div class="modal-body">
-                        <p class="phoneNumber">+9665213456789
-                            <img src="assets/images/pen-circle 1.svg">
-                        </p>
-                        <div class="verification-inputs">
-                            <div class="mb-3">
-                                <input type="text" maxlength="1" class="verification-code" />
-                                <input type="text" maxlength="1" class="verification-code" />
-                                <input type="text" maxlength="1" class="verification-code" />
-                                &nbsp;
-                                _
-                                &nbsp;
-                                <input type="text" maxlength="1" class="verification-code" />
-                                <input type="text" maxlength="1" class="verification-code" />
-                                <input type="text" maxlength="1" class="verification-code" />
-                            </div>
-                        </div>
-                        <p id="verificationError" class="error-message"></p>
 
-                        <input type="submit" value="تأكيد" id="confirmVerification">
-                    </div>
-                    <div class="modal-footer">
-                        <p class="resend">إعادة إرسال بعد 30 ثانية</p>
-                        <a href="#">إعادة إرسال الرمز</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
 
 

@@ -31,6 +31,7 @@ document.querySelector(".bodySidebar").addEventListener("click", function (e) {
   }
 });
 
+// Show the modal using Bootstrap's API
 document
   .getElementById("loginForm")
   .addEventListener("submit", function (event) {
@@ -47,11 +48,35 @@ document
     } else {
       event.preventDefault(); // Prevent the default form submission for now
 
-      // Show the modal
-      const modal = document.getElementById("verificationModal");
-      modal.style.display = "block";
+      // Show the modal using Bootstrap's modal method
+      const modal = new bootstrap.Modal(
+        document.getElementById("verificationModal")
+      );
+      modal.show();
 
-      // Handle verification code input
+      // Automatically move to next input field when typing
+      const verificationInputs =
+        document.querySelectorAll(".verification-code");
+      verificationInputs.forEach((input, index) => {
+        input.addEventListener("input", function () {
+          // Move to the next input if a number is entered
+          if (
+            input.value.length === 1 &&
+            index < verificationInputs.length - 1
+          ) {
+            verificationInputs[index + 1].focus();
+          }
+
+          // If backspace is pressed and input is empty, move to the previous input
+          input.addEventListener("keydown", function (e) {
+            if (e.key === "Backspace" && input.value === "" && index > 0) {
+              verificationInputs[index - 1].focus();
+            }
+          });
+        });
+      });
+
+      // Handle verification code confirmation
       document
         .getElementById("confirmVerification")
         .addEventListener("click", function () {
@@ -66,14 +91,13 @@ document
             document.getElementById("verificationError");
 
           if (code.length !== 6) {
+            // Show error message if code is not 6 digits or empty
             verificationError.textContent =
               "يجب أن يكون رمز التحقق مكون من 6 أرقام.";
           } else {
             verificationError.textContent = "";
-            alert("تم تأكيد الرقم بنجاح!"); // Replace this with actual verification logic
-            modal.style.display = "none"; // Hide the modal
-            // You can now submit the form or proceed with your logic
-            document.getElementById("loginForm").submit();
+            modal.hide(); // Hide the modal using Bootstrap's modal method
+            document.getElementById("loginForm").submit(); // You can now submit the form or proceed with your logic
           }
         });
     }
