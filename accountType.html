@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <title>accountType</title>
@@ -272,19 +273,19 @@
                         <p>حدد نوع حسابك لإستكمال البيانات</p>
                         <ul class="nav flex-column nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="type1-tab" data-bs-toggle="tab" href="#type1" role="tab"
+                                <a class="nav-link tabItem" id="type1-tab" data-bs-toggle="tab" href="#type1" role="tab"
                                     aria-controls="type1" aria-selected="false">
                                     باحث عن عقار
                                 </a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="type2-tab" data-bs-toggle="tab" href="#type2" role="tab"
+                                <a class="nav-link tabItem" id="type2-tab" data-bs-toggle="tab" href="#type2" role="tab"
                                     aria-controls="type2" aria-selected="false">
                                     مالك أو متعدد الملاك
                                 </a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="type3-tab" data-bs-toggle="tab" href="#type3" role="tab"
+                                <a class="nav-link tabItem" id="type3-tab" data-bs-toggle="tab" href="#type3" role="tab"
                                     aria-controls="type3" aria-selected="false">
 
                                     مسوق
@@ -292,7 +293,7 @@
                                 </a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="type4-tab" data-bs-toggle="tab" href="#type4" role="tab"
+                                <a class="nav-link tabItem" id="type4-tab" data-bs-toggle="tab" href="#type4" role="tab"
                                     aria-controls="type4" aria-selected="false">
 
                                     مكتب
@@ -300,7 +301,7 @@
                                 </a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="type5-tab" data-bs-toggle="tab" href="#type5" role="tab"
+                                <a class="nav-link tabItem" id="type5-tab" data-bs-toggle="tab" href="#type5" role="tab"
                                     aria-controls="type5" aria-selected="false">
 
                                     شركة
@@ -314,56 +315,336 @@
                 <!-- Right Column for Tab Content -->
                 <div class="col-md-9">
                     <div class="tab-content" id="myTabContent">
-
+                        <div class="chooseAccountFirst">
+                            <div class="parent">
+                                <img src="assets/images/Group 45163.png">
+                                <h3>من فضلك</h3>
+                                <h2>أختر نوع الحساب لإستكمال البيانات</h2>
+                            </div>
+                        </div>
                         <div class="tab-pane fade" id="type1" role="tabpanel" aria-labelledby="type1-tab">
-                            <form>
-                                <p>أنت باحث عن عقار. يمكنك الآن استكمال بياناتك.</p>
-                                <div class="mb-3">
-                                    <label for="name1" class="form-label">الاسم</label>
-                                    <input type="text" class="form-control" id="name1" placeholder="أدخل اسمك">
+                            <div class="completeRegisteration">
+                                <h2>أكمل بيانات حسابك</h2>
+                                <p>كمل البيانات التالية لإنشاء حساب جديد</p>
+                                <div class="fillData">
+                                    <form method="post" action="">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="uploadPhoto d-flex">
+                                                    <div class="right">
+                                                        <img id="imagePreview1" src="assets/images/Rectangle 1158.png"
+                                                            alt="Uploaded Image Preview">
+                                                        <input type="file" id="fileInput1" accept="image/*"
+                                                            style="display: none;">
+                                                        <div class="icon" id="cameraIcon1"
+                                                            onclick="document.getElementById('fileInput1').click();">
+                                                            <img src="assets/images/camera 1.svg" alt="Upload Icon">
+                                                        </div>
+                                                    </div>
+                                                    <div class="left">
+                                                        <h2>قم بإضافة صورة لك</h2>
+                                                        <p>الصورة أقل من 2 ميجا بايت</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="first">
+                                                    <label for="fullName1">الإسم بالكامل</label>
+                                                    <input type="text" placeholder="اكتب الإسم بالكامل" id="fullName1"
+                                                        name="fullName1" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="first">
+                                                    <label for="email1">البريد الإلكتروني</label>
+                                                    <input type="email" placeholder="اكتب البريد الإلكتروني هنا"
+                                                        id="email1" name="email1" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="first">
+                                            <input type="submit" value="إنشاء الحساب">
+                                        </div>
+                                    </form>
                                 </div>
-                                <!-- Add other form fields here -->
-                            </form>
+                            </div>
+
                         </div>
                         <div class="tab-pane fade" id="type2" role="tabpanel" aria-labelledby="type2-tab">
-                            <form>
-                                <p>أنت مالك أو متعدد الملاك. قم بتعبئة البيانات الخاصة بك.</p>
-                                <div class="mb-3">
-                                    <label for="name2" class="form-label">الاسم</label>
-                                    <input type="text" class="form-control" id="name2" placeholder="أدخل اسمك">
+                            <div class="completeRegisteration">
+                                <h2>أكمل بيانات حسابك</h2>
+                                <p>كمل البيانات التالية لإنشاء حساب جديد</p>
+                                <div class="fillData">
+                                    <form method="post" action="">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="uploadPhoto d-flex">
+                                                    <div class="right">
+                                                        <img id="imagePreview2" src="assets/images/Rectangle 1158.png"
+                                                            alt="Uploaded Image Preview">
+                                                        <input type="file" id="fileInput2" accept="image/*"
+                                                            style="display: none;">
+                                                        <div class="icon" id="cameraIcon2"
+                                                            onclick="document.getElementById('fileInput2').click();">
+                                                            <img src="assets/images/camera 1.svg" alt="Upload Icon">
+                                                        </div>
+                                                    </div>
+                                                    <div class="left">
+                                                        <h2>قم بإضافة صورة لك</h2>
+                                                        <p>الصورة أقل من 2 ميجا بايت</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="first">
+                                                    <label for="fullName2">الإسم بالكامل</label>
+                                                    <input type="text" placeholder="اكتب الإسم بالكامل" id="fullName2"
+                                                        name="fullName2" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="first">
+                                                    <label for="email2">البريد الإلكتروني</label>
+                                                    <input type="email" placeholder="اكتب البريد الإلكتروني هنا"
+                                                        id="email2" name="email2" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="first">
+                                            <input type="submit" value="إنشاء الحساب">
+                                        </div>
+                                    </form>
                                 </div>
-                                <!-- Add other form fields here -->
-                            </form>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="type3" role="tabpanel" aria-labelledby="type3-tab">
-                            <form>
-                                <p>أنت مسوق عقاري. يرجى إدخال تفاصيل التسويق.</p>
-                                <div class="mb-3">
-                                    <label for="name3" class="form-label">الاسم</label>
-                                    <input type="text" class="form-control" id="name3" placeholder="أدخل اسمك">
+                            <div class="completeRegisteration">
+                                <h2>أكمل بيانات حسابك</h2>
+                                <p>كمل البيانات التالية لإنشاء حساب جديد</p>
+                                <div class="fillData">
+                                    <form method="post" action="">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="uploadPhoto d-flex">
+                                                    <div class="right">
+                                                        <img id="imagePreview3" src="assets/images/Rectangle 1158.png"
+                                                            alt="Uploaded Image Preview">
+                                                        <input type="file" id="fileInput3" accept="image/*"
+                                                            style="display: none;">
+                                                        <div class="icon" id="cameraIcon3"
+                                                            onclick="document.getElementById('fileInput3').click();">
+                                                            <img src="assets/images/camera 1.svg" alt="Upload Icon">
+                                                        </div>
+                                                    </div>
+                                                    <div class="left">
+                                                        <h2>قم بإضافة صورة لك</h2>
+                                                        <p>الصورة أقل من 2 ميجا بايت</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="first">
+                                                    <label for="fullName3">الإسم بالكامل</label>
+                                                    <input type="text" placeholder="اكتب الإسم بالكامل" id="fullName3"
+                                                        name="fullName3" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="first">
+                                                    <label for="email3">البريد الإلكتروني</label>
+                                                    <input type="email" placeholder="اكتب البريد الإلكتروني هنا"
+                                                        id="email3" name="email3" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="first">
+                                                    <label for="valNumber">رقم رخصة فال</label>
+                                                    <input type="text" placeholder="أكتب رقم رخصة فال للوساطة العقارية"
+                                                        id="valNumber" name="valNumber" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="first">
+                                                    <label for="city-select">المدينة</label>
+                                                    <select id="city-select" class="form-select" style="width: 100%;">
+                                                        <option></option> <!-- Empty option for the placeholder -->
+                                                        <option value="1">الرياض</option>
+                                                        <option value="2">جدة</option>
+                                                        <option value="3">الدمام</option>
+                                                        <option value="4">المدينة المنورة</option>
+                                                        <option value="5">مكة المكرمة</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="first">
+                                            <input type="submit" value="إنشاء الحساب">
+                                        </div>
+                                    </form>
                                 </div>
-                                <!-- Add other form fields here -->
-                            </form>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="type4" role="tabpanel" aria-labelledby="type4-tab">
-                            <form>
-                                <p>أنت مكتب عقاري. أكمل بيانات المكتب الخاص بك.</p>
-                                <div class="mb-3">
-                                    <label for="name4" class="form-label">اسم المكتب</label>
-                                    <input type="text" class="form-control" id="name4" placeholder="أدخل اسم المكتب">
+                            <div class="completeRegisteration">
+                                <h2>أكمل بيانات حسابك</h2>
+                                <p>كمل البيانات التالية لإنشاء حساب جديد</p>
+                                <div class="fillData">
+                                    <form method="post" action="">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="uploadPhoto d-flex">
+                                                    <div class="right">
+                                                        <img id="imagePreview4" src="assets/images/Rectangle 1158.png"
+                                                            alt="Uploaded Image Preview">
+                                                        <input type="file" id="fileInput4" accept="image/*"
+                                                            style="display: none;">
+                                                        <div class="icon" id="cameraIcon4"
+                                                            onclick="document.getElementById('fileInput4').click();">
+                                                            <img src="assets/images/camera 1.svg" alt="Upload Icon">
+                                                        </div>
+                                                    </div>
+                                                    <div class="left">
+                                                        <h2>قم بإضافة صورة لك</h2>
+                                                        <p>الصورة أقل من 2 ميجا بايت</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="first">
+                                                    <label for="officeName">اسم المكتب</label>
+                                                    <input type="text" placeholder="اكتب اسم المكتب" id="officeName"
+                                                        name="officeName" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="first">
+                                                    <label for="email4">البريد الإلكتروني</label>
+                                                    <input type="email" placeholder="اكتب البريد الإلكتروني هنا"
+                                                        id="email4" name="email4" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="first">
+                                                    <label for="valNumber2">رقم رخصة فال</label>
+                                                    <input type="text" placeholder="أكتب رقم رخصة فال للوساطة العقارية"
+                                                        id="valNumber2" name="valNumber2" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="first">
+                                                    <label for="commerceNumber">السجل التجاري(الرقم الموحد)</label>
+                                                    <input type="text" placeholder="أكتب الرقم الموحد للسجل التجاري"
+                                                        id="commerceNumber" name="commerceNumber" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="first">
+                                                    <label for="officeDesc">نبذه تعريفية عن المكتب</label>
+                                                    <input type="text" placeholder="أكتب نبذه تعريفية قصيرة عن المكتب"
+                                                        id="officeDesc" name="officeDesc" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="first">
+                                                    <label for="city-select2">المدينة</label>
+                                                    <select id="city-select2" class="form-select" style="width: 100%;">
+                                                        <option></option> <!-- Empty option for the placeholder -->
+                                                        <option value="1">الرياض</option>
+                                                        <option value="2">جدة</option>
+                                                        <option value="3">الدمام</option>
+                                                        <option value="4">المدينة المنورة</option>
+                                                        <option value="5">مكة المكرمة</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="first">
+                                            <input type="submit" value="إنشاء الحساب">
+                                        </div>
+                                    </form>
                                 </div>
-                                <!-- Add other form fields here -->
-                            </form>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="type5" role="tabpanel" aria-labelledby="type5-tab">
-                            <form>
-                                <p>أنت شركة عقارية. يرجى استكمال بيانات الشركة.</p>
-                                <div class="mb-3">
-                                    <label for="name5" class="form-label">اسم الشركة</label>
-                                    <input type="text" class="form-control" id="name5" placeholder="أدخل اسم الشركة">
+                            <div class="completeRegisteration">
+                                <h2>أكمل بيانات حسابك</h2>
+                                <p>كمل البيانات التالية لإنشاء حساب جديد</p>
+                                <div class="fillData">
+                                    <form method="post" action="">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="uploadPhoto d-flex">
+                                                    <div class="right">
+                                                        <img id="imagePreview5" src="assets/images/Rectangle 1158.png"
+                                                            alt="Uploaded Image Preview">
+                                                        <input type="file" id="fileInput5" accept="image/*"
+                                                            style="display: none;">
+                                                        <div class="icon" id="cameraIcon5"
+                                                            onclick="document.getElementById('fileInput5').click();">
+                                                            <img src="assets/images/camera 1.svg" alt="Upload Icon">
+                                                        </div>
+                                                    </div>
+                                                    <div class="left">
+                                                        <h2>قم بإضافة صورة لك</h2>
+                                                        <p>الصورة أقل من 2 ميجا بايت</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="first">
+                                                    <label for="officeName2">اسم الشركة</label>
+                                                    <input type="text" placeholder="اكتب اسم الشركة" id="officeName2"
+                                                        name="officeName2" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="first">
+                                                    <label for="email5">البريد الإلكتروني</label>
+                                                    <input type="email" placeholder="اكتب البريد الإلكتروني هنا"
+                                                        id="email5" name="email5" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="first">
+                                                    <label for="valNumber3">رقم رخصة فال</label>
+                                                    <input type="text" placeholder="أكتب رقم رخصة فال للوساطة العقارية"
+                                                        id="valNumber3" name="valNumber3" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="first">
+                                                    <label for="commerceNumber2">السجل التجاري(الرقم الموحد)</label>
+                                                    <input type="text" placeholder="أكتب الرقم الموحد للسجل التجاري"
+                                                        id="commerceNumber2" name="commerceNumber2" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="first">
+                                                    <label for="officeDesc2">نبذه تعريفية عن الشركة</label>
+                                                    <input type="text" placeholder="أكتب نبذه تعريفية قصيرة عن الشركة"
+                                                        id="officeDesc2" name="officeDesc2" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="first">
+                                                    <label for="city-select3">المدينة</label>
+                                                    <select id="city-select3" class="form-select" style="width: 100%;">
+                                                        <option></option> <!-- Empty option for the placeholder -->
+                                                        <option value="1">الرياض</option>
+                                                        <option value="2">جدة</option>
+                                                        <option value="3">الدمام</option>
+                                                        <option value="4">المدينة المنورة</option>
+                                                        <option value="5">مكة المكرمة</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="first">
+                                            <input type="submit" value="إنشاء الحساب">
+                                        </div>
+                                    </form>
                                 </div>
-                                <!-- Add other form fields here -->
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -436,10 +717,46 @@
         </div>
     </footer>
     <!--js frameworks -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js "></script>
     <script src="assets/js/all.min.js "></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="assets/js/main.js "></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#city-select').select2({
+                placeholder: 'إختر المدينة',
+                allowClear: true,
+                language: {
+                    noResults: function () {
+                        return 'لا يوجد نتائج للبحث';
+                    }
+                }
+            });
+
+            $('#city-select2').select2({
+                placeholder: 'إختر المدينة',
+                allowClear: true,
+                language: {
+                    noResults: function () {
+                        return 'لا يوجد نتائج للبحث';
+                    }
+                }
+            });
+
+            $('#city-select3').select2({
+                placeholder: 'إختر المدينة',
+                allowClear: true,
+                language: {
+                    noResults: function () {
+                        return 'لا يوجد نتائج للبحث';
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
