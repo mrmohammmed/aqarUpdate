@@ -173,3 +173,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.querySelectorAll(".dropdown-menu").forEach((menu) => {
+  menu.addEventListener("click", function (e) {
+    e.stopPropagation();
+  });
+});

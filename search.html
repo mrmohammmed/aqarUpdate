@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--custom fremeworks -->
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>Search</title>
+</head>
+
+<body>
+
+    <!-- start of header -->
+    <!--start of top-header -->
+    <header>
+
+        <!--start of navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light shadow-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="assets/images/logo.png" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarSupportedContent">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="offcanvas offcanvas-top" id="navbarSupportedContent">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#">الشركات العقارية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">المكاتب العقارية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">التمويل العقاري</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">الخدمات المميزة</a></li>
+                    </ul>
+                    <div class="actions">
+                        <ul class="d-flex">
+                            <li class="download dropdown">
+                                <a href="#" class="dropdown-toggle" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="d-flex">
+                                        <div class="photo">
+                                            <img src="assets/images/Vector.svg">
+                                        </div>
+                                        <div class="word">
+                                            حمل التطبيق
+                                        </div>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu download-app" aria-labelledby="navbarDropdown">
+                                    <li>
+
+                                        <ul>
+                                            <li>
+                                                <a href="#"><img src="assets/images/Rectangle 24.png" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="assets/images/google-play.png" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="assets/images/app-store.png" /></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="add">
+                                <a href="#" class="link-style-small">
+                                    <span class="d-flex">
+                                        <div class="photo">
+                                            <img src="assets/images/Vector2.png">
+                                        </div>
+                                        <div class="word">
+                                            نشر إعلان
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="login">
+                                <a href="#" class="link-style-small2">
+                                    <span class="d-flex">
+                                        <div class="photo">
+                                            <img src="assets/images/user 1.png">
+                                        </div>
+                                        <div class="word">
+                                            المزيد
+                                            <img src="assets/images/menu.png" style="padding-right: 15px;">
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--end of navbar -->
+        <div class="bodySidebar">
+            <div class="side-menu">
+                <div class="top-sideMenu">
+                    <button class="close-services"><i class="fa-solid fa-xmark"></i></button>
+                    <h2>أهلا بك في منصات عقاراتكم</h2>
+                    <p>يمكنك تسجل الدخول الأن أو إنشاء حساب جديد</p>
+                    <ul class="d-flex">
+                        <li><a href="login.html">تسجيل الدخول</a></li>
+                        <li><a href="register.html">حساب جديد</a></li>
+                    </ul>
+                </div>
+                <div class="services-menu">
+                    <h2 class="title">خدمات منصات عقاراتكم</h2>
+                    <a href="#">
+                        <div class="service">
+                            <div class="parent">
+                                <div class="right">
+                                    <div class="photo">
+                                        <img src="assets/images/services/Frame 44730.svg" />
+                                    </div>
+                                    <div class="content">
+                                        <h2>عقارات للبيع</h2>
+                                        <p>هل تبحث عن عقار للبيع</p>
+                                    </div>
+                                </div>
+                                <div class="left">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-chevron-left"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="service">
+                            <div class="parent">
+                                <div class="right">
+                                    <div class="photo">
+                                        <img src="assets/images/services/Frame 44731.svg" />
+                                    </div>
+                                    <div class="content">
+                                        <h2>عقارات للإيجار</h2>
+                                        <p>هل تبحث عن عقار للإيجار</p>
+                                    </div>
+                                </div>
+                                <div class="left">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-chevron-left"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="service">
+                            <div class="parent">
+                                <div class="right">
+                                    <div class="photo">
+                                        <img src="assets/images/services/Group 44325 (1).svg" />
+                                    </div>
+                                    <div class="content">
+                                        <h2>الشركات العقارية</h2>
+                                        <p>البحث عن الشركات العقارية في مدينتك</p>
+                                    </div>
+                                </div>
+                                <div class="left">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-chevron-left"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="service">
+                            <div class="parent">
+                                <div class="right">
+                                    <div class="photo">
+                                        <img src="assets/images/services/Group 44205 (1).svg" />
+                                    </div>
+                                    <div class="content">
+                                        <h2>المكاتب العقارية</h2>
+                                        <p>البحث عن المكاتب العقارية في مدينتك</p>
+                                    </div>
+                                </div>
+                                <div class="left">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-chevron-left"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="service">
+                            <div class="parent">
+                                <div class="right">
+                                    <div class="photo">
+                                        <img src="assets/images/services/Group 44326.svg" />
+                                    </div>
+                                    <div class="content">
+                                        <h2>المسوقون العقاريون</h2>
+                                        <p>البحث عن المسوقون في مدينتك</p>
+                                    </div>
+                                </div>
+                                <div class="left">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-chevron-left"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="service">
+                            <div class="parent">
+                                <div class="right">
+                                    <div class="photo">
+                                        <img src="assets/images/services/Frame 44735.svg" />
+                                    </div>
+                                    <div class="content">
+                                        <h2>التمويل العقاري</h2>
+                                        <p>قدم طلبك للحصول علي تمويل عقاري</p>
+                                    </div>
+                                </div>
+                                <div class="left">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-chevron-left"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="help-menu text-center">
+                    <div class="titles">
+                        <h2>اتصل بنا</h2>
+                        <p>يمكنك التواصل معنا عبر الأرقام التالية</p>
+                    </div>
+
+                    <div class="numbers-phone phone">
+                        <p>اتصل بنا عبر الرقم الموحد</p>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:920066649">
+                            920066649
+                        </a>
+
+                    </div>
+                    <div class="numbers-phone whatsapp">
+                        <p>اتصل بنا عبر الواتساب</p>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="tel:920066649">
+                            920066649
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end of top-header -->
+    <!-- start section of filter -->
+    <section class="filter">
+        <div class="container">
+            <form>
+                <div class="filterAqars">
+                    <div class="first" style="width: 15%;">
+                        <select id="city" class="form-select" style="width: 100%;">
+                            <option></option> <!-- Empty option for the placeholder -->
+                            <option value="1">الرياض</option>
+                            <option value="2">جدة</option>
+                            <option value="3">الدمام</option>
+                            <option value="4">المدينة المنورة</option>
+                            <option value="5">مكة المكرمة</option>
+                        </select>
+                    </div>
+                    <div class="first" style="width: 15%;">
+                        <select id="cityFront" class="form-select" style="width: 100%;">
+                            <option></option> <!-- Empty option for the placeholder -->
+                            <option value="1">شمال الرياض</option>
+                            <option value="2">جنوب الرياض</option>
+                            <option value="3">شرق الرياض</option>
+                            <option value="4">غرب الرياض</option>
+                        </select>
+                    </div>
+                    <div class="first" style="width: 40%;">
+                        <div class="enterPlace">
+                            <input type="text" placeholder="اخل موقع العقار (المنطقة - المدينة- الحي - اسم الشارع)">
+                            <img src="assets/images/location.png">
+                        </div>
+                    </div>
+                    <div class="first" style="width: 15%;">
+                        <div class="choose btn-group" role="group">
+                            <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off"
+                                checked>
+                            <label class="btn btn-outline-primary" for="option1">للبيع</label>
+
+                            <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="option2">للإيجار</label>
+                        </div>
+                    </div>
+                    <div class="first" style="width: 15%;">
+                        <div class="choose btn-group" role="group">
+                            <input type="radio" class="btn-check" name="propertyType" id="option3" autocomplete="off"
+                                checked>
+                            <label class="btn btn-outline-primary" for="option3">سكني</label>
+
+                            <input type="radio" class="btn-check" name="propertyType" id="option4" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="option4">تجاري</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filterAqars">
+                    <div class="first" style="width: 15%;">
+                        <select id="type" class="form-select" style="width: 100%;">
+                            <option></option> <!-- Empty option for the placeholder -->
+                            <option value="1">شقه</option>
+                            <option value="2">فيلا</option>
+                            <option value="3">آرض</option>
+                            <option value="4">عماره</option>
+                        </select>
+                    </div>
+                    <div class="first" style="width: 15%;">
+                        <div class="download dropdown">
+                            <a href="#" class="dropdown-toggle" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                عدد الغرف
+                            </a>
+                            <div class="dropdown-menu download-app" aria-labelledby="navbarDropdown">
+
+                                <input type="radio" class="btn-check" name="roomsNum" id="room" value="استوديو"
+                                    autocomplete="off" checked>
+                                <label class="btn btn-outline-primary" for="room">استوديو</label>
+                                <input type="radio" class="btn-check" name="roomsNum" id="room1" value="1"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary" for="room1">1</label>
+                                <input type="radio" class="btn-check" name="roomsNum" id="room2" value="2"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary" for="room2">2</label>
+                                <input type="radio" class="btn-check" name="roomsNum" id="room3" value="3"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary" for="room3">3</label>
+                                <input type="radio" class="btn-check" name="roomsNum" id="room4" value="4"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary" for="room4">4</label>
+                                <input type="radio" class="btn-check" name="roomsNum" id="room5" value="5"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary" for="room5">5</label>
+                                <input type="radio" class="btn-check" name="roomsNum" id="room6" value="6"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary" for="room6">6</label>
+                                <input type="radio" class="btn-check" name="roomsNum" id="room7" value="7"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary" for="room7">7</label>
+                                <input type="radio" class="btn-check" name="roomsNum" id="room8" value="8"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary" for="room8">8</label>
+                                <input type="radio" class="btn-check" name="roomsNum" id="room9" value="9"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary" for="room9">+9</label>
+
+
+                                <div class="actions">
+                                    <button>حفظ</button>
+                                    <button>مسح</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first" style="width: 20%;">
+                        <div class="download dropdown dropdownSelect">
+                            <a href="#" class="dropdown-toggle" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                المساحة
+                            </a>
+                            <div class="dropdown-menu download-app" aria-labelledby="navbarDropdown">
+
+                                <div class="first">
+                                    <label for="lessSize">الحد الأدني</label>
+                                    <select id="lessSize" class="form-select" style="width: 100%;">
+                                        <option></option> <!-- Empty option for the placeholder -->
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="250">250</option>
+                                        <option value="300">300</option>
+                                    </select>
+                                </div>
+                                <div class="first">
+                                    <label for="maxSize">الحد الأقصي</label>
+                                    <select id="maxSize" class="form-select" style="width: 100%;">
+                                        <option></option> <!-- Empty option for the placeholder -->
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="250">250</option>
+                                        <option value="300">300</option>
+                                    </select>
+                                </div>
+
+
+                                <div class="actions">
+                                    <button>حفظ</button>
+                                    <button>مسح</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first" style="width: 20%;">
+                        <div class="download dropdown dropdownSelect">
+                            <a href="#" class="dropdown-toggle" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                السعر
+                            </a>
+                            <div class="dropdown-menu download-app" aria-labelledby="navbarDropdown">
+
+                                <div class="first">
+                                    <label for="lessPrice">الحد الأدني</label>
+                                    <select id="lessPrice" class="form-select" style="width: 100%;">
+                                        <option></option> <!-- Empty option for the placeholder -->
+                                        <option value="100,000">100,000</option>
+                                        <option value="200,000">200,000</option>
+                                        <option value="300,000">300,000</option>
+                                        <option value="400,000">400,000</option>
+                                        <option value="500,000">500,000</option>
+                                    </select>
+                                </div>
+                                <div class="first">
+                                    <label for="maxPrice">الحد الأقصي</label>
+                                    <select id="maxPrice" class="form-select" style="width: 100%;">
+                                        <option></option> <!-- Empty option for the placeholder -->
+                                        <option value="100,000">100,000</option>
+                                        <option value="200,000">200,000</option>
+                                        <option value="300,000">300,000</option>
+                                        <option value="400,000">400,000</option>
+                                        <option value="500,000">500,000</option>
+                                    </select>
+                                </div>
+
+
+                                <div class="actions">
+                                    <button>حفظ</button>
+                                    <button>مسح</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first" style="width: 15%;">
+                        <div class="download dropdown">
+                            <a href="#" class="dropdown-toggle" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                عمر العقار
+                            </a>
+                            <div class="dropdown-menu download-app" aria-labelledby="navbarDropdown">
+
+                                <input type="radio" class="btn-check" name="PropertyAge" id="new" value="جديد"
+                                    autocomplete="off" checked>
+                                <label class="btn btn-outline-primary" for="new">جديد</label>
+                                <input type="radio" class="btn-check" name="PropertyAge" id="new1" value="1"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary" for="new1">1</label>
+                                <input type="radio" class="btn-check" name="PropertyAge" id="new2" value="2"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary" for="new2">2</label>
+                                <input type="radio" class="btn-check" name="PropertyAge" id="new3" value="3"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary" for="new3">3</label>
+                                <input type="radio" class="btn-check" name="PropertyAge" id="new4" value="4"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary" for="new4">4</label>
+                                <input type="radio" class="btn-check" name="PropertyAge" id="new5" value="5"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary" for="new5">5</label>
+                                <input type="radio" class="btn-check" name="PropertyAge" id="new6" value="6"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary" for="new6">6</label>
+                                <input type="radio" class="btn-check" name="PropertyAge" id="new7" value="7"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary" for="new7">7</label>
+                                <input type="radio" class="btn-check" name="PropertyAge" id="new8" value="8"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary" for="new8">8</label>
+                                <input type="radio" class="btn-check" name="PropertyAge" id="new9" value="9"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary" for="new9">+9</label>
+
+
+                                <div class="actions">
+                                    <button>حفظ</button>
+                                    <button>مسح</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first" style="width: 15%;">
+                        <button type="submit" class="executeFilter">
+                            <img src="assets/images/Vector (1).png">
+                            <span>مسح فلتر البحث</span>
+
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- end section of filter -->
+    <!--footer-->
+    <footer>
+        <div class="top-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="info text-center">
+                            <img src="assets/images/logo.png">
+                            <div class="follow">
+                                <p>تابعنا علي وسائل التواصل الإجتماعي</p>
+                                <ul class="d-flex">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+
+                                </ul>
+                            </div>
+                            <p>منصة مرخصة من الهيئة العامة للعقار</p>
+                            <div class="barcode">
+                                <img class="first" src="assets/images/شعار وهوية المنصات العقارية المرخصة (1) 1.png">
+                                <img class="second" src="assets/images/image.svg">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="links-pages">
+                            <h2>روابط مهمة</h2>
+                            <ul>
+                                <li><a href="#">عن عقاراتكم</a></li>
+                                <li><a href="#">سياسية الخصوصية</a></li>
+                                <li><a href="#">الشروط والأحكام</a></li>
+                                <li><a href="#">حقوق الملكية</a></li>
+                                <li><a href="#">الشكاوي والمقترحات</a></li>
+                                <li><a href="#">تواصل معنا</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="links-pages">
+                            <h2>روابط أخري</h2>
+                            <ul>
+                                <li><a href="#">الباقات والإشتراكات</a></li>
+                                <li><a href="#">رسوم الخدمات</a></li>
+                                <li><a href="#">التمويل العقاري</a></li>
+                                <li><a href="#">المدونة</a></li>
+                                <li><a href="#">الأسئلة الشائعة</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer text-center">
+            <p>جميع الحقوق محفوظة لعقاراتكم @2024</p>
+        </div>
+    </footer>
+    <!--js frameworks -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/js/all.min.js "></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="assets/js/main.js "></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#city').select2({
+                placeholder: 'المدينة',
+                allowClear: true,
+                language: {
+                    noResults: function () {
+                        return 'لا يوجد نتائج للبحث';
+                    }
+                }
+            });
+
+            $('#cityFront').select2({
+                placeholder: 'واجهة المدينة',
+                allowClear: true,
+                language: {
+                    noResults: function () {
+                        return 'لا يوجد نتائج للبحث';
+                    }
+                }
+            });
+
+            $('#type').select2({
+                placeholder: 'نوع العقار',
+                allowClear: true,
+                language: {
+                    noResults: function () {
+                        return 'لا يوجد نتائج للبحث';
+                    }
+                }
+            });
+            $('#lessSize').select2({
+                placeholder: 'أقل مساحة',
+                allowClear: true,
+                language: {
+                    noResults: function () {
+                        return 'لا يوجد نتائج للبحث';
+                    }
+                }
+            });
+            $('#maxSize').select2({
+                placeholder: 'أعلي مساحة',
+                allowClear: true,
+                language: {
+                    noResults: function () {
+                        return 'لا يوجد نتائج للبحث';
+                    }
+                }
+            });
+            $('#lessPrice').select2({
+                placeholder: 'أقل سعر',
+                allowClear: true,
+                language: {
+                    noResults: function () {
+                        return 'لا يوجد نتائج للبحث';
+                    }
+                }
+            });
+            $('#maxPrice').select2({
+                placeholder: 'أعلي سعر',
+                allowClear: true,
+                language: {
+                    noResults: function () {
+                        return 'لا يوجد نتائج للبحث';
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

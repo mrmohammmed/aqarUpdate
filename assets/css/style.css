@@ -113,7 +113,7 @@ input[type="email"] {
   border-radius: 10px;
   border: 1px solid #a7a7a7;
   padding-right: 10px;
-  padding-top: 10px;
+  padding-top: 14px;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
@@ -264,10 +264,11 @@ input::placeholder {
   font-size: 15px;
   padding: 1rem 0.5rem;
 }
-
+/*
 .dropdown-toggle::after {
   border-top: 0.3em solid var(--primary-color);
 }
+*/
 
 .navbar-nav .nav-item:nth-of-type(3) {
   position: relative;
@@ -676,18 +677,13 @@ input::placeholder {
   background-color: transparent;
   color: #000;
 }
-.hero-section .search .enterPlace input {
-  border-radius: 10px;
-  border: 0.5px solid #a7a7a7;
-  background: #fff;
-  width: 100%;
-  height: 58px;
+.enterPlace input {
   padding-right: 40px;
 }
-.hero-section .search .enterPlace {
+.enterPlace {
   position: relative;
 }
-.hero-section .search .enterPlace img {
+.enterPlace img {
   position: absolute;
   right: 5px;
   top: 12px;
@@ -697,7 +693,7 @@ input::placeholder {
   background: #ff881b;
   color: #fff;
   border: none;
-  height: 58px;
+  height: 55px;
   width: 100%;
 }
 /* estateCities */
@@ -1426,4 +1422,145 @@ label {
 
 .typeAccount .completeRegisteration .tab-content .tab-pane.active {
   display: block; /* Show active tab content only */
+}
+/* section of filter */
+.filter {
+  padding: 10px 0px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.filter .filterAqars {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.filter .filterAqars .choose {
+  border-radius: 10px;
+  border: 1px solid #a7a7a7;
+  background: #fff;
+  padding: 10px;
+  width: 100%;
+}
+.filter .filterAqars .btn-check:checked + .btn-outline-primary {
+  border-radius: 10px;
+  background: rgba(255, 136, 27, 0.08);
+  color: #000;
+  box-shadow: none;
+  outline: none;
+}
+.filter .filterAqars .btn-outline-primary {
+  border: 0px;
+  color: #000;
+}
+.filter .filterAqars .btn-outline-primary:hover {
+  background-color: transparent;
+  color: #000;
+}
+.filter .filterAqars .dropdown {
+  height: 55px;
+  border-radius: 10px;
+  border: 1px solid #a7a7a7;
+  padding-right: 10px;
+  padding-top: 15px;
+}
+.filter .filterAqars .dropdown-toggle {
+  display: block;
+  width: 100%;
+  color: #000;
+}
+.filter .filterAqars .dropdown-menu {
+  width: 100%;
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.14));
+  border-radius: 10px;
+  padding: 15px 5px;
+  right: -10px !important;
+  top: 20px !important;
+}
+
+.filter .filterAqars .dropdown-toggle::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900; /* Ensures the icon appears bold as needed */
+  content: "\f078"; /* Font Awesome down arrow icon */
+  border-top: 0.3em solid transparent;
+  border-left: 0.3em solid transparent;
+  border-bottom: 0;
+  border-right: 0.3em solid transparent;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+
+.filter .filterAqars .download .btn-outline-primary {
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  padding: 5px 14px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.filter .filterAqars .download .btn-check:checked + .btn-outline-primary {
+  border-radius: 5px;
+  border: 1px solid #262f6a;
+  background: rgba(38, 47, 106, 0.04);
+}
+.filter .filterAqars .download .actions {
+  display: flex;
+  gap: 5px;
+  flex-wrap: nowrap;
+}
+.filter .filterAqars .download .actions button {
+  width: 100%;
+  font-size: 16px;
+}
+.filter .filterAqars .download .actions button:first-child {
+  border-radius: 5px;
+  border: 1px solid #262f6a;
+  background: #262f6a;
+  color: #fff;
+}
+.filter .filterAqars .download .actions button:last-child {
+  border-radius: 5px;
+  border: 1px solid #262f6a;
+  background: #fff;
+  color: #262f6a;
+}
+.filter .filterAqars .select2-container--default .select2-selection--single .select2-selection__placeholder {
+  color: #000;
+}
+.filter .filterAqars .dropdownSelect .select2-container .select2-selection--single {
+  height: 46px;
+}
+.filter
+  .filterAqars
+  .dropdownSelect
+  .select2-container--default
+  .select2-selection--single
+  .select2-selection__placeholder {
+  color: #999;
+}
+.filter .filterAqars .dropdownSelect .first {
+  margin-bottom: 10px;
+}
+.filter .filterAqars .executeFilter {
+  height: 55px;
+  border-radius: 10px;
+  border: 1px solid #ff881b;
+  background: rgba(255, 136, 27, 0.05);
+  width: 100%;
+  color: var(--secondary-color);
+  font-size: 16px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.filter .filterAqars .executeFilter span {
+  padding-right: 10px;
+}
+.filter .filterAqars .executeFilter:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+.filter .filterAqars .executeFilter:hover img {
+  filter: brightness(0) invert(1);
 }
